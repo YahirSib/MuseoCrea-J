@@ -210,6 +210,7 @@
 }
 #principal .col{
     min-width: 320px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -359,7 +360,10 @@
     }
  }
 /* footer */
-
+@font-face {
+    font-family: cocon;
+    src: url(../css/Cocon-Regular-Font.otf);
+    }
 footer{
     position: relative;
     bottom: 0;
@@ -368,7 +372,7 @@ footer{
     background: #111;
     height: auto;
     width: 100%;
-    font-family: "Open Sans";
+    font-family: "cocon";
     padding-top: 40px;
     color: #fff;
 }
