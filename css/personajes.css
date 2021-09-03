@@ -33,6 +33,7 @@ header h1{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    border-radius: 12px;
 }
 .foto img{
     width: 100%;
@@ -63,6 +64,7 @@ header h1{
 .descripcion p{
     padding: 20px;
     text-align: justify;
+    color: white;
 }
 
 .name i{
@@ -86,6 +88,9 @@ header h1{
     opacity: 1;
 }
 
+.descripcion{
+    background-color: #010743;
+}
 
 footer{
     position: relative;
