@@ -189,15 +189,14 @@
     color: #000642;
 }
 
-
 #historiaCrea{
-   width: 90%;
-   height: 100%;
-}
-#principal #bloques #col img{
-    width: 90%;
+    width: 100%;
     height: 100%;
- }
+}
+
+#historiaCrea1{
+   height: 350px;
+}
 #bloques{
     display: flex;
 }
@@ -209,7 +208,18 @@
     background-color: #000642;
     align-items: center;
 }
-
+#principal .col{
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#principal .col2{
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #contenedor2 h1{
         text-align: center;
