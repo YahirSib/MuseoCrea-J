@@ -213,7 +213,7 @@
     align-items: center;
     justify-content: center;
 }
-#principal .col2{
+#espacio .col2{
     min-width: 320px;
     display: flex;
     align-items: center;
@@ -329,12 +329,13 @@
  /*Video*/
  #video-contenedor{
      min-height: 700px;
-     background-color: #fff;
+     background-image: url(../img/section1.jpg);
+     background-position: center;
+     background-size: cover;
     
  }
  .video{
      margin: auto;
-     background-color: #fff;
      justify-content: space-evenly;
      display: flex;
      flex-wrap: wrap;
