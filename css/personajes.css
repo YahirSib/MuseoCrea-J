@@ -4,6 +4,12 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: 'Gotic';
+   src: url(../fonts/Fuente/CenturyGothicPaneuropeanRegular.ttf) format('OpenType');
+    font-style: normal;
+    font-weight: normal;
+}
 
 header{
     display: flex;
@@ -258,12 +264,14 @@ footer{
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
+    font-family: Century;
 }
 .footer-content p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
+    font-family: "Gotic";
 }
 .socials{
     list-style: none;
@@ -298,6 +306,7 @@ footer{
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
+    font-family: "Gotic";
 }
 .footer-bottom p a{
         font-size: 14px;
