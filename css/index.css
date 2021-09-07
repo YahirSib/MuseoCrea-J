@@ -404,10 +404,11 @@ header h1{
 .picbox{
     width: 40%;
     margin-bottom: 40px;
+    margin-top: 60px;
 }
 .picbox img{
     width: 100%;
-    margin-top: 20px;
+    
 }
 
 /*TELONES*/
