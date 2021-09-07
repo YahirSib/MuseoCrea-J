@@ -426,7 +426,6 @@ header h1{
     background-image: url(../img/telones.JPG);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 }
 .telones-info{
     display: flex;
