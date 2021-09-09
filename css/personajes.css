@@ -11,8 +11,6 @@
     font-weight: normal;
 }
 
-
-
 header{
     display: flex;
     justify-content: center;
@@ -68,7 +66,6 @@ header h1{
 }
 .parrafo div p{
     text-align: justify;
-    color: black;
 }
 
 .cajas{
@@ -81,6 +78,10 @@ header h1{
     justify-content: center;
 }
 
+.cajas a{
+    text-decoration: none;
+}
+
 .card{
     width: 400px;
     height: 540px;
@@ -89,9 +90,6 @@ header h1{
     overflow: hidden;
     border-radius: 12px;
     margin: 7px 5px;
-}
-a{
-    text-decoration: none;
 }
 .foto img{
     width: 100%;
@@ -176,7 +174,6 @@ a{
     opacity: 0;
     transition: ease 1.5s all ;
     z-index: 1;
-    color: black;
 }
 .descripcion2 p{
     padding: 20px;

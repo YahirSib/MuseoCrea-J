@@ -50,6 +50,14 @@ header h1{
     border: solid white 2px;
     border-radius: 16px;
     text-decoration: none;
+    background-color: transparent;
+    z-index: 1;
+}
+.cabeza a:hover{
+    background-color: #fff;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    color: #000643;
 }
 .cabeza h1{
     text-align: center;
@@ -79,22 +87,22 @@ header h1{
     padding-top: 45px;
     justify-content: center;
     align-items: center;
+    min-width: 320px;
 }
 .part1{
     width: 100%;
+    min-width: 320px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-evenly;
     height: 80%;
-    flex-wrap: wrap;
 }
 .part2{
     width: 95%;
     padding: 10px 40px;
     color: white;
     height: 20%;
-    min-width: 320px;
 }
 .part2 p{
     margin-bottom: 0%;
@@ -108,7 +116,6 @@ header h1{
     width: 100%;
 }
 .info{
-    min-width: 320px;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -249,30 +256,14 @@ header h1{
 
 .participaron{
     width: 100%;
-    min-height: 95vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 5%;
 }
 
-.circuloBox{
-    position: absolute;
-    width: 100%;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 210px;
-}
-.circulo{
-    width: 200px;
-    height: 200px;
-    background-color:#000643;
-    border-radius: 50%;
-    
-}
 
 .participaron h1{
     color: #000643;
@@ -288,25 +279,69 @@ header h1{
     text-align: justify;
     margin:10px 0px;
 }
+.participaron img{
+    width: 200px;
+    border-left: 4px solid #fcc50a;
+    padding-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
 
 /*PROPOSITO*/
 .proposito{
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     background-color: #000643;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    
+  
 }
 .box{
     background-color: white;
-    width: 97%;
-    min-height: 97vh;
+    width: 100%;
+    min-height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+}
+.box-izquierda{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.box-izquierda img{
+    width: 500px;
+    border-radius: 15px;
+    z-index: 3;
+}
+.box-derecha{
+    width: 60%;
+    background-color: #1d295f;
+    color: #fff;
+    padding: 40px;
+    text-align: justify;
+    height: 100%;
+}
+.box-derecha h1{
+    font-family: "Bold";
+    font-size: 2.5em;
+    margin-bottom: 4%;
+}
+.azul{
+
+        background-color: #000643;
+        width: 40%;
+        height: 200px;
+        position: absolute;
+        z-index: 2;
+        margin-top: 5%;
+        left: 0;
+
 }
 .inform{
     width: 90%;
@@ -314,18 +349,21 @@ header h1{
     margin-top: 60px;
 }
 .inform h1{
-    color: #fcc50a;
+    color: #000643;
     text-align: center;
     font-family: "Bold";
+    margin-top: 5%;
 }
 .inform h1 span{
     font-size: 60px;
-    color: #000643;
+    
+    color: #fcc50a;
 }
 .box .inform p{
     width: 100%;
     text-align: justify;
     margin: 30px 0px;
+    font-family: '';
 }
 
 /*RADICA*/
@@ -334,17 +372,16 @@ header h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
-    min-height: 100vh;
-    padding: 0px 20px;
+    height: 100%;
+    padding-top: 5%;
     background-color: #000643;
 }
 
 .radica .in{
-    width: 50%;
-    height: 100vh;
-    background-color: white;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -353,12 +390,13 @@ header h1{
     text-align: justify;
 }
 .radica .in h1{
-    color: #000643;
+    color: #fff;
     font-size: 70px;
-    text-align: left;
+    text-align: center;
     width: 100%;
     font-family: "Bold";
-    margin-bottom: 20px;
+    padding-bottom: 5%;
+   
 }
 .radica .fot{
     width: 50%;
@@ -510,6 +548,49 @@ header h1{
 .carousel{
     width: 60%;
 }
+.carta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1d295f;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+.texto2{
+    color: #fff;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    width: 69%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-right: 2%;
+    margin-left: 2%;
+    z-index: 3;
+}
+.blanco{
+    background-color: #fff;
+    width: 50%;
+    height: 1000px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 11%;
+    left: 0;
+}
+.imagen{
+    width: 26%;
+    right: 0;
+    margin: 5px;
+    z-index: 3;
+}
+.imagen img{
+    width: 100%;
+    min-width: 320px;
+    border-radius: 15px;
+}
 
 /*VIDEO*/
 
@@ -634,23 +715,7 @@ footer{
     font-weight: 200;
 }
 
+
 @media screen and (max-width: 920px) {
-    /*Historia*/
-    .pic{
-        order: 2;
-        width: 95%;
-    }
-    .pic img{
-        margin: 30px 0px;
-    }
-    .info h1{
-        text-align: center;
-    }
-    .part2{
-        width: 40%;
-        padding: 0px;
-    }
-    .part2 p{
-        padding: 10px;
-    }
+    
 }
