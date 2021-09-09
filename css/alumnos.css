@@ -1,6 +1,13 @@
+/*FUENTES*/
 @font-face {
     font-family: 'Century';
    src: url(../fonts/Fuente/CenturyGothicPaneuropeanSemiBold.ttf) format('OpenType');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Bold';
+   src: url(../fonts/Fuente/CenturyGothicPaneuropeanBold.ttf) format('OpenType');
     font-style: normal;
     font-weight: normal;
 }
@@ -10,9 +17,9 @@
     font-style: normal;
     font-weight: normal;
 }
-
-
-
+*{
+    overflow-x: hidden;
+}
 header{
     display: flex;
     justify-content: center;
@@ -39,6 +46,7 @@ header h1{
     width: 80%;
 }
 
+
 .cabeza img{
     width: 225px;
     border-right: 8px solid #fcc50a;
@@ -49,8 +57,8 @@ header h1{
     margin-right:30px ;
     text-align: left;
     font-family: Century;
+    overflow: hidden;
 }
-
 .parrafo{
     width: 100%;
     min-height: 40vh;
@@ -58,194 +66,164 @@ header h1{
     align-items: center;
     justify-content: center;
 }
-
+a{
+    text-decoration: none;
+}
 .parrafo div{
     width: 90%;
     height: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .parrafo div p{
     text-align: justify;
-    color: black;
 }
-
-.cajas{
+/*CARTAS*/
+article{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(../img/Fondo-azul.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cartas{
+    padding: 10px;
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.card{
-    width: 400px;
-    height: 540px;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    border-radius: 12px;
-    margin: 7px 5px;
-}
-a{
-    text-decoration: none;
-}
-.foto img{
-    width: 100%;
-    height: 100%;
-    transition: ease 1.5s all ;
-}
-.foto{
-    width: 100%;
-    height: 55%;
-}
-.descripcion, .descripcion2{
-    width: 100%;
-    height: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#n{
-    font-size: 35px;
-}
-#a{
-    font-size: 30px;
-}
-#b{
-    text-align: center;
-}
-.descripcion .ab{
-    position: absolute;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.descripcion2 .ab{
-    position: absolute;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.descripcion .ab h1, .descripcion .ab h2{
-    transition: ease 2s all ;
-}
-
-.descripcion2 .ab h1, .descripcion2 .ab h2{
-    transition: ease 2s all ;
-}
-
-.name, .name2{
-    transition: ease 1.5s all ;
-    position: absolute;
-    opacity: 0;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    padding: 15px;
+    background: linear-gradient(-90deg, white 90%, #000643 0%);
 }
-.descripcion .ab h2{
-    font-weight: 100;
-    font-size: 15px;
-    text-align: center;
+.card{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: none;
+    background: transparent;
+    margin-left: 50px;
 }
-
-.descripcion2 .ab h2{
-    font-weight: 100;
-    font-size: 15px;
-    text-align: center;
-}
-
-.descripcion p{
-    padding: 20px;
-    text-align: justify;
-    color: white;
-    margin-top: 30px;
-    opacity: 0;
-    transition: ease 1.5s all ;
-    z-index: 1;
-    color: black;
-}
-.descripcion2 p{
-    padding: 20px;
-    text-align: justify;
-    color: black;
-    margin-top: 30px;
-    opacity: 0;
-    transition: ease 1.5s all ;
+.card-img{
+    width: 50%;
     z-index: 1;
 }
-.name i{
+.card-img img{
+    width: 100%;
+}
+.card-nombre h1, .card-nombre h2{
+    opacity: 0;
+    transition: 1.5s all ease-in;
+    
+}
+.card-nombre h1{
+    border-bottom: 3px solid #fcc50a;
+    padding: 15px 0px;
+    font-size: 45px;
     color: white;
+    font-family: "Bold";
+    text-align: center;
+}
+.card-nombre h2{
     font-size: 20px;
-    margin: 0px 5px;
-}
-.name2 i{
-    color: black;
-    font-size: 20px;
-    margin: 0px 5px;
-}
-.name2 h1{
-    color: black;
-}
-.name h1{
     color: white;
+    padding: 10px;
+    font-family: "Gotic";
+    text-align: center;
 }
-
-.card:hover .foto img{
-    transform: scale(1.1);
-    transition: ease 1.5s all ;
+.card-nombre{
+    width: 50%;
+    height: 53.9vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: -70%;
+    transition: 0.8s all ease-in;
+    background-color: #000643;
+    padding: 10px;
 }
-
-.card:hover .descripcion .ab h1,.card:hover .descripcion .ab h2{
-    transform: scale(0.0);
-    transition: ease 1s all ;
+.card:hover .card-nombre{
+    margin-left: 0%;
+    transition: 0.8s all ease-in;
 }
-
-.card:hover .descripcion2 .ab h1,.card:hover .descripcion2 .ab h2{
-    transform: scale(0.0);
-    transition: ease 1s all ;
-}
-
-.card:hover .foto .name{
-    transition: ease 1.5s all ;
-    margin-top: -20%;
+.card:hover .card-nombre h1, .card:hover .card-nombre h2{
     opacity: 1;
-}
-.card:hover .descripcion p{
-    transition: ease 1.5s all ;
-    margin-top: 0%;
-    opacity: 1;
-}
-.card:hover .descripcion2 p{
-    transition: ease 1.5s all ;
-    margin-top: 0%;
-    opacity: 1;
-}
-.card:hover .foto .name2{
-    transition: ease 1.5s all ;
-    margin-top: -20%;
-    opacity: 1;
+    transition: 1.5s all ease-in;
 }
 
-.descripcion{
-    background-color: #010743;
+/*V2*/
+.cartas2{
+    padding: 10px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background: linear-gradient(90deg, white 90%, #fcc50a 0%);
 }
-.descripcion2{
+.card2{
+    margin-right: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border: none;
+}
+.card-img2{
+    width: 50%;
+    z-index: 1;
+}
+.card-img2 img{
+    width: 100%;
+}
+.card-nombre2 h1, .card-nombre2 h2{
+    opacity: 0;
+    transition: 1.5s all ease-in;
+    
+}
+.card-nombre2 h1{
+    border-bottom: 3px solid white;
+    padding: 15px 0px;
+    font-size: 45px;
+    color: #000643;
+    font-family: "Bold";
+    text-align: center;
+}
+.card-nombre2 h2{
+    font-size: 20px;
+    color: #000643;
+    padding: 10px;
+    font-family: "Gotic";
+    text-align: center;
+}
+.card-nombre2{
+    width: 50%;
+    height: 53.9vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-right: -70%;
+    transition: 0.8s all ease-in;
     background-color: #fcc50a;
+    padding: 10px;
 }
+.card2:hover .card-nombre2{
+    margin-right: 0%;
+    transition: 0.8s all ease-in;
+}
+.card2:hover .card-nombre2 h1, .card2:hover .card-nombre2 h2{
+    opacity: 1;
+    transition: 1.5s all ease-in;
+}
+/*FOOTER*/
 footer{
     position: relative;
     bottom: 0;
