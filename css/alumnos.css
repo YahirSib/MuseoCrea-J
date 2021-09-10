@@ -114,6 +114,7 @@ article{
 }
 .card-img img{
     width: 100%;
+    height: 100%;
 }
 .card-nombre h1, .card-nombre h2{
     opacity: 0;
