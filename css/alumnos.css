@@ -110,6 +110,7 @@ article{
 }
 .card-img{
     width: 50%;
+    height: 22.1em;
     z-index: 1;
 }
 .card-img img{
@@ -179,6 +180,7 @@ article{
 }
 .card-img2{
     width: 50%;
+    height: 22.1em;
     z-index: 1;
 }
 .card-img2 img{
