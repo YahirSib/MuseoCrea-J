@@ -137,7 +137,7 @@ article{
 }
 .card-nombre{
     width: 50%;
-    height: 53.9vh;
+    height: 22.1em;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -205,7 +205,7 @@ article{
 }
 .card-nombre2{
     width: 50%;
-    height: 53.9vh;
+    height: 22.1em;
     display: flex;
     flex-direction: column;
     align-content: center;
