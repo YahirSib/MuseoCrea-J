@@ -87,6 +87,7 @@ article{
     background-image: url(../img/Fondo-azul.jpg);
     background-position: center;
     background-size: cover;
+    background: white;
 }
 .cartas{
     padding: 10px;
@@ -309,4 +310,97 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+@media screen and (max-width: 991px) {
+    .cabeza{
+        flex-direction: column;
+        height: 100%;
+    }
+    .cabeza img{
+        order: 2;
+        border-top: 8px solid #fcc50a;
+        border-right:none ;
+        padding: 0px;
+        padding-top:20px ;
+        width: 150px;
+    }
+    .cabeza h1{
+        margin: 0px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .parrafo{
+        padding: 15px;
+    }
+    .parrafo div{
+        width: 100%;
+    }
+
+    .cartas2{
+        padding: 0%;
+        background: white;
+        margin-top: 25px;
+        min-height: auto;
+    }
+    .card2{
+        background-color: white;
+        width: 100%;
+        margin-right: 0px;
+        position: relative;
+        justify-content: center;
+    }
+    .card-img2{
+        width: 70%;
+    }
+    .card-nombre2{
+        margin: 0px;
+        position: absolute;
+        z-index: 2;
+        width: 70%;
+        background-color: transparent;
+        transition: 1.5s all ease-in;
+    }
+    .card2:hover .card-nombre2{
+        background-color: rgba(252, 197, 10, 0.7);
+        transition: 1.5s all ease-in;
+    }
+
+
+    .cartas{
+        padding: 0%;
+        background: white;
+        margin-top: 25px;
+        min-height: auto;
+    }
+    .card{
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        position: relative;
+        justify-content: center;
+    }
+    .card-img{
+        width: 70%;
+    }
+    .card-nombre{
+        margin: 0px;
+        position: absolute;
+        z-index: 2;
+        width: 70%;
+        background-color: transparent;
+        transition: 1.5s all ease-in;
+    }
+    .card:hover .card-nombre{
+        background-color: rgba(0, 6, 67, 0.7);
+        transition: 1.5s all ease-in;
+    }
+
+}
+
+@media screen and (max-width: 682px) {
+    .card-img, .card-img2, .card-nombre2, .card-nombre{
+        width: 95%;
+    }
 }
