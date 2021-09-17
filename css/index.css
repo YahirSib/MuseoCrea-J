@@ -803,7 +803,7 @@ footer{
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   /*Historia */
   .part1{
     flex-direction: column;
@@ -940,6 +940,68 @@ footer{
 .telones-info{
   flex-direction: column;
   height: auto;
+}
+.telones-info h1{
+    width: 100%;
+    padding: 15px;
+}
+.telones-info p{
+    width: 100%;
+    padding: 15px;
+}
+
+/*Afiche */
+
+.afiches{
+    flex-direction: column;
+    background: linear-gradient(180deg, white 37%, #000643 0%);
+}
+
+.afiches-info{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    padding-top: 45px;
+    margin-bottom: 30px;
+}
+.afiches-info h1{
+    text-align: center;
+}
+.afiches-info h2{
+    padding: 15px;
+    text-align: justify;
+}
+.afiches-card{
+    width: 100%;
+}
+.carousel{
+    width: 95%;
+}
+
+
+/*video */
+
+.video{
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.video-titulo{
+    width: 100%;
+    justify-content: center;
+}
+.video-titulo h1{
+    border-top: 40px solid #fcc50a;
+    border-left: none ;
+    padding: 0px;
+    width: 95%;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 30px;
+}
+
+.video-vid{
+    width: 95%;
 }
 
 }
