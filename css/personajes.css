@@ -344,7 +344,9 @@ footer{
         margin-bottom: 40px;
         text-align: center;
     }
-
+    .name ,.name2{
+        padding: 15px 2px;
+    }
     .parrafo{
         padding: 15px;
     }
